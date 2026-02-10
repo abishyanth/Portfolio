@@ -1,0 +1,40 @@
+.text-loop-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centered by default, or flex-start for left align */
+    gap: 8px;
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.static-text {
+    font-weight: 300;
+}
+
+.loop-wrapper {
+    height: 1.5em;
+    /* Fix height to prevent jumping */
+    overflow: hidden;
+    position: relative;
+    min-width: 200px;
+    text-align: left;
+}
+
+.loop-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: 700;
+    white-space: nowrap;
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    .text-loop-container {
+        font-size: 1.2rem;
+    }
+}

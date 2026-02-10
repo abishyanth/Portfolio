@@ -1,0 +1,112 @@
+.skills-revamp-section {
+    padding: 100px 20px;
+    background: radial-gradient(circle at center, #1a1a2e 0%, var(--bg-color) 100%);
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-container {
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.skills-header {
+    margin-bottom: 60px;
+}
+
+.skills-header p {
+    color: #888;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.skills-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-tag {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    color: #ccc;
+}
+
+.skill-tag:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+    color: #fff;
+}
+
+.skill-icon {
+    display: flex;
+    align-items: center;
+    color: var(--accent-color);
+}
+
+.skill-name {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.orb-1 {
+    width: 300px;
+    height: 300px;
+    background: var(--accent-color);
+    top: -50px;
+    left: -50px;
+    animation: floatOrb 8s infinite alternate;
+}
+
+.orb-2 {
+    width: 400px;
+    height: 400px;
+    background: var(--secondary-color);
+    bottom: -100px;
+    right: -100px;
+    animation: floatOrb 10s infinite alternate-reverse;
+}
+
+@keyframes floatOrb {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(30px, 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-tag {
+        padding: 10px 20px;
+    }
+
+    .skill-name {
+        font-size: 0.9rem;
+    }
+}

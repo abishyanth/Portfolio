@@ -1,0 +1,24 @@
+:root {
+  /* Colors */
+  --bg-color: #0a0a0a;
+  --text-color: #e0e0e0;
+  --accent-color: #00f3ff; /* Cyan Neon */
+  --secondary-color: #bd00ff; /* Purple Neon */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --card-bg: #1a1a1a;
+  
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
+  --font-code: 'Fira Code', monospace;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Transition */
+  --transition-speed: 0.3s;
+}
