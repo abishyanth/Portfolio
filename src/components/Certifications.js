@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, BookOpen, Star, Trophy, ExternalLink } from 'lucide-react';
+import { Award, BookOpen, Star, Trophy } from 'lucide-react';
 import './Certifications.css';
 
 const certifications = [
