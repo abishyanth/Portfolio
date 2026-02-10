@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, ArrowRight } from 'lucide-react';
+import { Github, ArrowRight } from 'lucide-react';
 import SpotlightCard from './ui/SpotlightCard';
 import './Projects.css';
 
